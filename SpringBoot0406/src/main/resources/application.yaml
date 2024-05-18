@@ -1,0 +1,18 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: cost
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.80.121:3307/ActualCombat?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false
+    username: root
+    password: 123456
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 8
+mybatis-plus:
+  type-aliases-package: com.example.entity
+logging:
+  level:
+    com.example.mapper: debug
